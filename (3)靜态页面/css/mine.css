@@ -1,0 +1,365 @@
+/***********公共样式  ********/
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+}
+body{
+    width: 100%;
+    height:100%;
+    font-family:helvetica, Arial,黑体;
+}
+a{
+    text-decoration:none;
+}
+img,input{
+    border:none;
+    display: block;
+}
+ul,li{
+    list-style: none;
+}
+/***********公共样式结束********/
+/***********顶头部样式开始********/
+.headerTop{
+    height: .42rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9;
+    background: rgba(0,0,0,.5);
+
+}
+.headerTop a:nth-of-type(1){
+    margin-left: .1rem;
+}
+.headerTop a:nth-of-type(2){
+    font-size:.2rem;
+    color: white;
+}
+.headerTop a:nth-of-type(3){
+   margin-right: .1rem;
+}
+/***********顶头部样式结束********/
+/***********中头部样式开始********/
+.headerMid{
+    width: 100%;
+    height: .9rem;
+    font-size:.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: .42rem;
+    background: url("../images/img-fb/header-bg.png");
+    background-size:cover ;
+}
+
+.headerMid .headerImg img{
+    border-radius: 50%;
+    height: .4rem;
+    width: .4rem;
+    margin: 0 .1rem;
+}
+.headerMsg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.headerMsg .headRight{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerMidRight{
+    display: flex;
+ }
+.headerMidRight img{
+    align-self: center;
+    width: .25rem;
+    height: .25rem;
+}
+.headerMsg, .headerImg{
+    /*display: none;*/
+}
+.showLogin{
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid white;
+    width: 1rem;
+    height: .4rem;
+    line-height:.4rem;
+    text-align: center;
+    font-size:.17rem;
+    color: white;
+    display: none;
+}
+
+/***********中头部样式结束********/
+/***********底头部样式开始********/
+.headerBottom{
+    width: 100%;
+    height: .6rem;
+    background:black;
+    font-size:.17rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerBottom a{
+    color: white;
+    align-self: center;
+}
+.headerBottom a span{
+    display:block;
+    text-align: center;
+}
+.headerBottom a:nth-of-type(1){
+    border-right:2px solid #282a2a;
+    padding-right: .2rem;
+}
+.headerBottom a:nth-of-type(2){
+    border-right:2px solid #282a2a ;
+    padding-right: .2rem;
+}
+/***********低头部样式结束********/
+/***********默认频道样式开始********/
+.default{
+    width: 100%;
+    height: .45rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default a:nth-of-type(1){
+    font-size:.17rem;
+    color: #444444;
+    font-weight: 700;
+    margin-left: .1rem;
+}
+.default a:nth-of-type(2){
+    font-size:.15rem;
+    color: #a8a8a8;
+    margin-right: .1rem;
+    display: flex;
+}
+.default a img{
+    width: .2rem;
+    height: .2rem;
+}
+/***********默认频道样式结束********/
+.empty{
+    width: 100%;
+    height: .15rem;
+    background: #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/***********订单样式开始********/
+.indentMid{
+    height: .8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:.17rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.indentMid .bian i{
+   color: #ce0b23;
+}
+.indentMid a{
+    color: #444444;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.indentMid a i{
+    font-size:.2rem;
+    color: #444444;
+    display: block;
+}
+/***********订单样式结束********/
+/***********资产样式开始********/
+.property h3{
+    height: .45rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: .17rem;
+    color: #444444;
+    line-height: .45rem;
+    padding-left: .1rem;
+}
+.propertyMid{
+    height: .8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:.17rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.propertyMid a{
+    color: #444444;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.propertyMid .bina i{
+    color: #ce0b23;
+}
+.propertyMid a i{
+    font-size:.2rem;
+    color: #444444;
+    display: block;
+}
+.propertyBottom{
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+.propertyBottom a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .5rem;
+    font-size:.17rem;
+    color: #444444;
+}
+.propertyBottom a .inviteLeft{
+    display: flex;
+    align-items: center;
+}
+.propertyBottom a .inviteLeft i {
+    font-size:.2rem;
+    margin: 0 .1rem;
+}
+.propertyBottom a .bianhong i{
+    color: #ce0b23;
+}
+
+
+.propertyBottom .invite{
+    background: #ce0b23;
+    color: white;
+}
+
+
+/*banner*/
+.banner{
+    display: block;
+    width: 100%;
+    height: 1.3rem;
+    background: #f0f0f0;
+}
+.banner img{
+    width: 100%;
+    padding: .1rem 0;
+}
+/***********资产样式结束********/
+/***********优选新品样式开始********/
+.optimize p{
+    width: 100%;
+    height: .4rem;
+    text-align: center;
+    line-height: .4rem;
+    font-size:.17rem;
+    color: #323232;
+}
+.optimizeList{
+    display: flex;
+    justify-content: space-between;
+    width:96%;
+    margin: 0 2%;
+    flex-wrap: wrap;
+}
+.optimizeList li{
+    width: 48%;
+    font-size:.1rem;
+    color: #323232;
+    margin-bottom: .2rem;
+}
+.optimizeList li .liImg{
+    width:100%;
+}
+.optimizeList li p{
+    width:100%;
+    font-size:.12rem;
+    line-height: .2rem;
+    color: #444444;
+}
+.optimizeList li .monyList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.optimizeList li .monyList .mony{
+    color: #010101;
+    font-weight: 800;
+}
+.optimizeList li .monyList i{
+    font-size:.2rem;
+    color: #b0b0b0;
+}
+.showImg{
+    position: relative;
+}
+.optimizeImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:rgba(0,0,0,.6);
+    display: none;
+
+}
+.hideImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.hideImg .like{
+    display: inline-block;
+    height: .6rem;
+    width: .6rem;
+    border-radius: 50%;
+    font-size:.15rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: .6rem;
+    color:white;
+    background:#d0021b;
+    margin-bottom: .1rem;
+}
+.hideImg .noLike{
+    display: inline-block;
+    height: .6rem;
+    width: .6rem;
+    border-radius: 50%;
+    font-size:.15rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: .6rem;
+    color:white;
+    background:#4a90e2;
+}
+.optimizeList .xianliang{
+    font-size: .1rem;
+    color: gray;
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: .02rem .06rem;
+}
+.optimizeList .limit{
+    visibility: hidden;
+}
+/***********优选新品样式结束********/

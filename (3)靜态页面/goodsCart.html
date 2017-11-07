@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/goodsCart.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+<!--header-->
+<header>
+    <h3>购物车</h3>
+    <!--<span class="edit">编辑</span>-->
+</header>
+
+<!--goodsCart_section-->
+<section class="goodsCart">
+    <div class="empty">
+        <i class="icon iconfont icon-gouwuche"></i>
+        <p>您的购物车暂无商品</p>
+        <a href="#">随便逛逛</a>
+    </div>
+    <div class="goodsCartList">
+        <div class="goodsCartList_item">
+            <div class="goodsCheck">
+                <input type="checkbox" class="goodsChecked" checked>
+            </div>
+            <a class="goodsItem">
+                <div class="goodsItem_img">
+                    <img src="images/img_yxz/025f0b1f62805ddeb8773c6e050965a9ad.PNG" alt="">
+                </div>
+                <div class="goodsItem_info">
+                    <div class="goodsItem_info_top">
+                        <h3 class="info_name">PUMA Clyde Moon Jungle NATUREL 低帮休闲鞋</h3>
+                        ×<span class="info_num">1</span>
+                    </div>
+                    <div class="goodsItem_info_center">
+                        颜色：<span class="info_color">多色-小牛皮原色</span>
+                        尺码:<span class="info_size">37码</span>
+                    </div>
+                    <div class="goodsCartList_num">
+                        <span>数量</span>
+                        <form class="calculate_forms" action="">
+                            <span class="cartListCalculate subtract">-</span>
+                            <input class="cartListNum" type="text" value="1">
+                            <span class="cartListCalculate add">+</span>
+                        </form>
+                    </div>
+                    <div class="goodsItem_info_bottom">￥<span class="info_price">689</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="goodsCartFooter">
+            <div class="goodsCheck allCheck">
+                <input type="checkbox" id="allChecked" checked>
+                <label for="allChecked">全选</label>
+            </div>
+            <div class="allInfo">
+                <div class="allPrice">总计：￥<span class="allPriceNum">0</span></div>
+                <div class="tipText">不含运费</div>
+            </div>
+            <div class="payBtn">结算</div>
+        </div>
+    </div>
+</section>
+
+<!--猜你喜欢-->
+<section class="goodsList_favor">
+    <div class="goodsList_favor_header"><p>猜你喜欢</p></div>
+    <ul class="goodsList_favor_container">
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/011c97c6e09b02942cb963931d626c8797.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">adidas Originals SUPERSTAR 80s CLEAN 低帮休闲鞋</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥1099.00</span>
+                        <!--<span class="price_original">￥1399.00</span>-->
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/0236282c824fc496e429f3c8c5ba69f06f.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">TURN SIGNAL 长袖宽松中长款卫衣</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥228.00</span>
+                        <span class="price_original">￥368.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/015cd1db161df8d47ffc571786e62c6821.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">adidas Originals SUPERSTAR 80s 低帮休闲鞋</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥1099.00</span>
+                        <!--<span class="price_original">￥368.00</span>-->
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/01e27d8f2292740165c9632dadb451d629.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">YYYOHOOD 黄伟文Wyman X yohood联名商品 圆领卫衣</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥179.00</span>
+                        <span class="price_original">￥399.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/016c2843725886be84c85a02c2fb70297a.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">Square Houlest  印花情侣款套头卫衣（男女同款）</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥149.00</span>
+                        <span class="price_original">￥348.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/0130d852b51ec8e2c1996fe1f7e84350c8.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">MOUSSY 简约纯色系带风衣</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥515.00</span>
+                        <span class="price_original">￥798.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/01f57628438192990461036cc4973c9174.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name noNew">Zebra Crossing 螺旋字母手镯</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥199.00</span>
+                        <span class="price_original">￥299.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/02b6be72f933fdda0192e37b1238c4290e.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">CAVERS 枪灰色复古简约开口手镯</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥199.00</span>
+                        <span class="price_original">￥399.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/01615c909e92cef6965ffbcd386446f6bd.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">adidas Originals TUBULAR DOOM SOCK PK 休闲运动鞋</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥1199.00</span>
+                        <!--<span class="price_original">￥399.00</span>-->
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="goodsList_favor_container_item">
+            <span class="item_tag noNew">NEW</span>
+            <a class="item_img">
+                <div class="item_img_pic">
+                    <img src="images/img_yxz/013ac3032f0ff246b19a4a42203e684779.PNG" alt="">
+                </div>
+                <div class="item_img_zzc_box">
+                    <div class="item_img_zzc">
+                        <span class="zzc_btn relative">找相似</span>
+                        <span class="zzc_btn dislike">不喜欢</span>
+                    </div>
+                </div>
+            </a>
+            <a class="item_txt">
+                <p class="item_txt_name">COMBACK 黑魂皮革系列  黑色简约型格斜挎包</p>
+                <div class="item_txt_info">
+                    <div class="item_txt_price">
+                        <span class="price_discount">￥180.00</span>
+                        <span class="price_original">￥360.00</span>
+                    </div>
+                    <div class="goodsCartBtn">
+                        <i class="icon iconfont icon-gouwuche1">+</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!--加入购物车弹出框-->
+<section class="goodsCartBox">
+    <div class="goodsCartBox_header">
+        <div class="goodsCartBox_header_pic">
+            <img src="images/img_yxz/025f0b1f62805ddeb8773c6e050965a9ad.PNG" alt="" >
+        </div>
+        <div class="goodsCartBox_header_info">
+            <div class="goodsPrice">￥<span class="goodsPrice_num">839</span></div>
+            <div class="goodsSelected">已选:&nbsp<span class="goodsSelected_detail"></span></div>
+        </div>
+        <span class="close">×</span>
+    </div>
+    <div class="goodsCartBox_goodsDetail">
+        <div class="goodsDetail color">
+            <span>颜色</span>
+            <div class="detailTag color">
+                <span class="selectedBtn color">多色-小牛皮原色</span>
+            </div>
+        </div>
+        <div class="goodsDetail size">
+            <span>尺码</span>
+            <div class="detailTag size">
+                <span class="selectedBtn size">35码</span>
+                <span class="selectedBtn size">35 1/2码</span>
+                <span class="selectedBtn size">36码</span>
+                <span class="selectedBtn size">36 1/2码</span>
+                <span class="selectedBtn size">37码</span>
+                <span class="selectedBtn size">37 1/2码</span>
+                <span class="selectedBtn size">38码</span>
+                <span class="selectedBtn size">38 1/2码</span>
+                <span class="selectedBtn size">39码</span>
+                <span class="selectedBtn size">39 1/2码</span>
+                <span class="selectedBtn size">40码</span>
+                <span class="selectedBtn size">40 1/2码</span>
+            </div>
+        </div>
+        <div class="goodsDetail num">
+            <span>数量</span>
+            <form class="calculate_forms" action="">
+                <span class="calculate subtract" id="subtract">-</span>
+                <input id="goodsNum" type="text" value="1">
+                <span class="calculate add" id="add">+</span>
+            </form>
+        </div>
+    </div>
+    <div class="goodsCartBox_goodsAdd">加入购物车</div>
+</section>
+
+<!--footer-->
+<footer>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/goodsCart.js"></script>

@@ -1,0 +1,390 @@
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin: 0;
+	padding:0;
+	user-select: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	font-size: 26.67vw;
+}
+a{
+	text-decoration:none;
+	color: black;
+}
+img{
+	border:none;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	overflow-x: hidden;
+	background: #f0f0f0;
+}
+/*
+.page_clearing{
+	width: 100%;
+	height: 100%;
+	background: #f0f0f0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 1.6rem;
+	z-index: 20;
+	overflow-y: scroll;
+}
+*/
+	
+
+/*顶部*/
+.clearing_tit{
+	width: 100%;
+	color: #ffffff;
+	background: #4f4138;
+	padding: 0.5rem;
+	z-index: 10;
+	display: flex;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.clearing_tit span{
+	margin-right: 5%;
+	font-size: 1.2rem;
+}
+.clearing_youd{
+	color: #7a7a8c;
+	font-size: 0.6rem;
+}
+.clearing_you{
+	color: #000000;
+	font-weight: 600;
+}
+.btn_chashe{
+	text-align: right;
+}
+.btn_cha{
+	display: inline-block;
+	width: 2rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background: #5e6161;
+	position: relative;
+	transition: all 1.5s;
+}
+.btn_cha img{
+	position: absolute;
+	left: 0;
+	top: 10%;
+	transition: all 0.5s;
+}
+
+/*中部*/
+.clearing_cen{
+	width: 100%;
+	margin: 2.5rem 0;
+	font-size: 1.2rem;
+	margin-top: 2.7rem;
+	margin-bottom: 4.6rem;/*----------改------------------------------------*/
+}
+/*个人信息、地址等*/
+.clearing_cen .clearing_per{
+	width: 100%;
+	padding: 0.5rem 0.5rem 1rem;
+	box-sizing: border-box;
+	margin-bottom: 0.3rem;
+	display: flex;
+	font-size: 0.8rem;
+	background-color: #ffffff;
+	background-image: url(../images/img_clearing/bg_01.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+.clearing_cen .clearing_per .clearing_perp01{
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+}
+.clearing_cen .clearing_per .clearing_perp01>i{
+	font-size: 1.6rem;
+	margin-bottom: 50%;
+}
+.clearing_cen .clearing_per .clearing_perp02{
+	flex: 7;
+}
+.clearing_cen .clearing_per .clearing_perp02>p{
+	width: 100%;
+}
+.clearing_cen .clearing_per .clearing_perp02>p:nth-of-type(1){
+	display: flex;
+	justify-content: space-between;
+}
+.clearing_cen .clearing_per .clearing_perp02>p:nth-last-of-type(1){
+	display: flex;
+	justify-content: flex-end;
+	color: #ff0000;
+	font-size: 0.6rem;
+	font-weight: 600;
+}
+/*支付方式*/
+.clearing_cen .clearing_pay{
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 0.8rem;
+	background-color: #ffffff;
+}
+.clearing_cen .clearing_pay .clearing_payti{
+	width: 95%;
+	margin-left: 5%;
+	padding: 0.5rem 0 0.5rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+}
+.clearing_cen .clearing_pay .clearing_payti p{
+	flex:1;
+}
+.clearing_cen .clearing_pay .clearing_payti p:nth-last-of-type(1){
+	text-align: right;
+	padding-right: 0.5rem;
+	box-sizing: border-box;
+}
+.clearing_cen .clearing_pay .clearing_payti p .clearing_porcel{
+	font-size: 0.6rem;
+}
+.clearing_cen .clearing_pay .clearing_payti p .clearing_porimg{
+	transform: rotate(0deg);
+	transform-origin: center center;
+	transition: all 0.5s;
+}
+.clearing_cen .clearing_pay .clearing_paytt{
+	width: 100%;
+	background: #e0e0e0;
+	display: none;
+}
+.clearing_cen .clearing_pay .clearing_paytt .clearing_sm{
+	font-size: 0.6rem;
+}
+.clearing_cen .clearing_pay .clearing_paytt p{
+	width: 95%;
+	margin-left: 5%;
+	padding: 0.5rem 1rem 0.5rem 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.clearing_cen .clearing_pay .clearing_paytt p{
+	border-bottom: 1px solid #ffffff;
+}
+.clearing_cen .clearing_pay .clearing_paytt p:nth-last-of-type(1){
+	border-bottom: none;
+}
+.clearing_cen .clearing_pay .clearing_paytt p img{
+
+}
+/*要购买的商品*/
+.clearing_cen .clear_spin{
+	width: 100%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	background: #ffffff;
+	display: flex;
+	margin: 0.3rem 0;
+}
+.clearing_cen .clear_spin .clear_spip{
+	flex: 1;
+	font-size: 0.1rem;
+}
+.clearing_cen .clear_spin .clear_spip1 img{
+	width: 100%;
+	height: 100%;
+}
+.clearing_cen .clear_spin .clear_spip2{
+	flex: 2;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+.clearing_cen .clear_spin .clear_spip2 span{
+	display: inline-block;
+	margin: 0.2rem 0;
+}
+.clearing_cen .clear_spin .clear_spip2 p{
+	color: #999999;
+	font-size: 0.6rem;
+}
+.clearing_cen .clear_spin .clear_spip3{
+	text-align: right;
+	padding: 0.7rem 0 0;
+}
+.clearing_cen .clear_spin .clear_spip3 p:nth-of-type(1){
+	color: #ff0000;
+	font-weight: 600;
+}
+.clearing_cen .clear_spin .clear_spip3 p:nth-of-type(2){
+	color: #999999;
+	font-size: 0.6rem;
+}
+.clearing_msg{
+	width: 90%;
+	height: 3rem;
+	margin: 0.5rem 5%;
+	border-style: none;
+	border: 1px solid #c7c8c3;
+    border-spacing: 50%;
+    border-radius: 0.2rem;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+
+/*商品金额、运费、活动金额*/
+.clearing_elsell{
+	width: 100%;
+	margin: 0.3rem 0;
+}
+.clearing_elsell .clearing_elsee{
+	width: 100%;
+	background: #ffffff;
+	padding: 0.2rem 1rem;
+	font-size: 0.6rem;
+	font-weight: 600;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+/*----2张可用----*/
+.clearing_ysd{
+	font-size: 0.6rem;
+	color: #ffbfe5;
+	padding: 0 0.2rem;
+	background: #ff575c;
+}
+
+/*
+.clearing_cen .clearing_cens{
+	width: 100%;
+	height: 6rem;
+	margin-bottom: 0.5rem;
+	background: #ffffff;
+}
+*/
+
+/*底部*/
+.clearing_fot{
+	width: 100%;
+	background: #ffffff;
+	position: fixed;
+	/*bottom: 2rem;*/
+	bottom: 0rem;
+	z-index: 10;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8rem;
+	border-top: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+}
+.clearing_fot p{
+	color: #ff0000;
+}
+.clearing_fot p:nth-of-type(1){
+	font-weight: 600;
+}
+.clearing_fot p span:nth-of-type(1){
+	color: #000000;
+}
+.clearing_fot .clearing_sub{
+	padding: 0.5rem 1.5rem;
+	margin-top: -0.5rem;
+	margin-right: -0.5rem;
+	background: red;
+	border-radius: 0.2rem;
+	color: #ffffff;
+}
+.clearing_sedre{
+	width: 100%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	background: #5c5a5a;
+	position: fixed;
+	bottom: 0rem;
+	left: 0;
+	font-size: 0.6rem;
+	color: #ffffff;
+	z-index: 8;
+	transition: all 0.5s;
+}
+
+
+/*隐藏的选择地址*/
+.clear_dress{
+	width: 100%;
+	height: 100%;
+	background: #edebeb;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	font-size: 0.6rem;
+}
+.clear_dress .clear_drespar{
+	width: 93%;
+	margin-left: 5%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #9f9f9f;
+	display: flex;
+	justify-content: space-between;
+}
+.clear_dress .clear_drespar:nth-of-type(1){
+	margin-top: 2rem;
+}
+.clear_dress .clear_drespar p{
+	flex: 1;
+}
+.clear_dress .clear_drespar p:nth-of-type(1){
+	display: flex;
+	align-items: center;
+}
+.clear_dress .clear_drespar p:nth-of-type(1) img{
+	margin:0 auto;
+}
+.clear_dress .clear_drespar p:nth-of-type(1) .dre_qie02{
+	display: none;
+}
+.clear_dress .clear_drespar p:nth-of-type(2){
+	flex: 7;
+}
+.clear_dress .clear_drespar p:nth-of-type(2) span{
+	line-height: 1.6rem;
+}
+.clear_dress .clear_drespar p:nth-of-type(2) span:nth-of-type(2){
+	color: #a5a6a2;
+}
+.clear_dress .clear_drespar p:nth-of-type(3){
+	flex: 3;
+}
+.clear_dress .clearing_to{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	background: #3a3a3a;
+	color: #ffffff;
+}

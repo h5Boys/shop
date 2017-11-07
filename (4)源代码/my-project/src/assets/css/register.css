@@ -1,0 +1,104 @@
+/***********公共样式  ********/
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+}
+body{
+    width: 100%;
+    height:100%;
+    background: #444444;
+    font-family:"helvetica","Arial","黑体";
+}
+a{
+    text-decoration:none;
+}
+img,input{
+    border:none;
+    display: block;
+}
+ul,li{
+    list-style: none;
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size:.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header span{
+    margin-left: 1rem;
+}
+
+.header img{
+
+    text-align: center;
+}
+
+/*登录框*/
+.loginForm li{
+    width: 96%;
+    margin:.2rem 2%;
+    height: .53rem;
+    border-radius: 5px;
+    background:rgba(87,87,87,0.5) ;
+    display: flex;
+    align-items: center;
+    font-size:.17rem;
+    color: white;
+}
+.loginForm li input{
+    border: none;
+    height: .45rem;
+    width:70%;
+    background: none;
+    outline: none;
+}
+.loginForm li .youh{
+    margin: 0 .1rem;
+}
+.loginForm li .password{
+    margin: 0 .1rem;
+}
+.loginForm li .yna{
+    margin-right: .1rem;
+}
+.loginForm li .mart{
+    margin:0 .1rem;
+}
+.cuo, .dui{
+    display: none;
+}
+li .button{
+    font-size: .2rem;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+.china{
+    display: flex;
+    align-items: center;
+}
+.loginForm li:nth-of-type(1){
+    justify-content: space-between;
+}
+.loginForm li:nth-of-type(2){
+    justify-content:space-around;
+}
+.loginForm li:nth-of-type(4){
+    background: #a2a2a2;
+    justify-content: center;
+}
+.tilte{
+    font-size: .17rem;
+    color: white;
+    text-align: center;
+}
